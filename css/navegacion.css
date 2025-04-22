@@ -1,0 +1,277 @@
+/*********************  MENU NAV ******************************/
+.navbar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
+    color: #000;
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+}
+
+.optmenu{
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    transition: all 1s solid;
+}
+
+.optmenu:hover{
+    color: #fff;
+    background-color: #000;
+    transition: all 1s solid;
+}
+
+.optmenu:active{
+    background-color: brown;
+}
+.portada1{
+    background-color: #eff2ed;
+    color: #000 !important;
+    /*metodo skewY()Inclina un elemento hacia la izquierda o hacia la derecha,
+    de acuerdo al angulo escrriot*/
+    transform: skewY(-5deg);
+    /*permite hacer un espacio*/
+    margin-top: -5vw;
+}
+
+
+/* PERSONALIZACION MENU HAMBURGUESA */
+
+.navbar-toggler{
+    background-color:#809ecf ;
+    border: 3px solid #fff;
+
+}
+
+.navbar-toggler:hover{
+    background-color: #d6dbe3;
+}
+
+.custom-toggler.navbar-toggler{
+    border-color: #ffff;
+}
+
+/*Personalizacion lineas del menu hamburguesa*/
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }         
+.custom-toggler .navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  } 
+
+
+  /*desactivar viñetas de la lista*/
+
+ul {
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+}
+
+
+/************ TABLA DE PRECIOS ***************/
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.price-table {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #d6d6d6;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    margin-left: 0px;
+}
+
+i{
+    font-size: 45px;
+    color: rgb(42, 46, 127);
+}
+
+
+/*el margin negativo -40px es para que haga el efecto que sube el cuadro*/
+
+
+/*el margin positivo 40px es para que haga el efecto que baje el cuadro*/
+
+
+/*el color azul es el principal de la tabla de precios*/
+
+.price-table:hover {
+    background-color: #10a37c;
+    margin-top: -40px;
+    z-index: 10;
+    transform: scale(1.2);
+    transition: all 0.2s ease-in;
+    border: none;
+    /*buscar sombras generadas 
+    https://getcssscan.com/css-box-shadow-examples */
+    /*cuatro valores: desplazamiento de x, desplazamiento de y, nivel de desenfoque y color de la sombra.*/
+    /*box-shadow: -2px 3px 7px 1px cyan;*/
+    box-shadow: rgba(106, 173, 175, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px;
+}
+
+
+/*clases de los textos precio y dollar*/
+
+div.price {
+    font-size: 70px;
+    font-weight: 300;
+    color: #42ced8;
+}
+
+div.dollar {
+    vertical-align: top;
+    font-size: 17px !important;
+    display: inline-block;
+    margin-top: 15px;
+    color: #3b3348;
+}
+
+
+/*al pasar el mouse en la info cambia a color blanco los textos ya que al inicio son negros*/
+
+.price-table:hover * {
+    color: #fff !important;
+}
+
+
+/**************** MEDIA QUERIES ******************/
+
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {
+    .price-table {
+        padding-bottom: 50px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {}
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
+
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+
+@media (min-width: 1400px) {}
+
+
+
+/********************* MEDIAS QUERYS ******************************/
+
+@media (max-width: 575px) {
+    html {
+        font-size: 1rem;
+    }
+    .logo img {
+        
+        display: block !important;
+        margin:0 auto !important; 
+        /*margin-left: 50px;*/
+    }
+    .navbar-toggler {
+        margin: 0 auto;
+    }
+    .titulo {
+        font-size: 2.5rem;
+        margin-top: 150px;
+    }
+    p {
+        font-size: 1.1rem !important;
+    }
+    
+}
+
+/*formulario*/
+
+label {
+    color: #000;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bolder;
+    float: left;
+}
+
+
+/* Para agregar un borde cuando se activan los campos */
+
+input:hover {
+    outline: 3px solid brown;
+}
+
+textarea:hover {
+    outline: 3px solid brown;
+}
+
+
+/* Propiedades de los campos */
+
+input,
+textarea {
+    cursor: pointer;
+    background-color: #e2e2e2 !important;
+}
+
+
+/* Propiedades de los botones */
+
+.enviar {
+    width: 170px;
+    height: 60px;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 26px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px 20px;
+    border-width: 2px;
+    border-color: #e7cdf5;
+    background-color: rgb(47, 125, 109) !important;
+}
+
+.borrar {
+    color: #fff;
+    width: 170px;
+    height: 60px;
+    margin: 0 auto;
+    font-size: 26px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px 20px;
+    border-width: 2px;
+    border-color: #e7cdf5;
+    background-color: rgb(203, 146, 32) !important;
+}
+
+
+/* validacion campo TextArea */
+
+textarea {
+    resize: none;
+    /*
+  height:150px;
+  max-height:150px;
+  min-height:150px;
+  max-width:auto;
+  min-width:400px;*/
+}
+

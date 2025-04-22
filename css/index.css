@@ -1,0 +1,178 @@
+header {
+    /*background-image: url('../img/banner_seaworld-min.jpg');*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.contactenos{
+
+    background-image: url('../img2/doctora-min.jpg');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+
+}
+
+.prueba{
+    height: 300px;
+}
+
+
+
+header h1 {
+    padding-top: 260px;
+    font-size: 85px;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+    font-weight: bold;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+.banner2{
+    background-image: url("../img2/consultorio-min.jpg");
+    background-size: cover;
+    background-position: center;
+    /*efecto parallax*/
+    background-attachment: fixed;
+    box-shadow: inset;
+    background-blend-mode: inherit;
+    padding-top: 140px;
+    padding-bottom: 140px;
+
+}
+
+
+.banner3{
+    background-image: url("../img2/cariilas-min.jpg");
+    background-size: cover;
+    background-position: center;
+    /*efecto parallax*/
+    background-attachment: fixed;
+    box-shadow: inset;
+    background-blend-mode: inherit;
+    padding-top: 140px;
+    padding-bottom: 140px;
+
+}
+
+
+
+.container-fluid1{
+    padding-top: 200px;
+	padding-bottom: 200px;
+    height: 800px;
+    
+}
+
+.titulo1{
+    font-weight:bolder;
+}
+
+.titulo3{
+    
+    font-size: 50px;
+}
+
+/*.container-fluid2{
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.container-fluid3{
+    padding-top: 140px;
+    padding-bottom: 140px;
+}*/
+
+.fondo2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+.titulo2{
+    font-size: 40px;
+    color: #fff;
+}
+
+.fondo1{
+    background-color: #06080c;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.fondo3{
+    background-color: rgb(75, 120, 129);
+}
+
+p{
+    font-size: 20px;
+}
+
+form{
+    background-color:#d7f7fb;
+    padding: 15px 15px;
+} 
+
+.goto-top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    width: 75px;
+    height: 50px;
+}
+
+
+i{
+    font-size: 80px;
+    color: #2d92e5;
+}
+
+
+
+i:hover{
+    background-color: #1c4d65;
+
+}
+
+/*CAROUSEL*/
+
+
+/*tamaño de flechas*/
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 60px;
+    height: 60px;
+    /*fondo de color*/
+    /*collor de  fondo los iconos*/
+    background-color: #e4e4e4;
+}
+
+
+/*color de flechas*/
+/*cambiar la propiedad fill por # hexadecimal*/
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+
+
+footer{
+    background-color: #104248;
+}
